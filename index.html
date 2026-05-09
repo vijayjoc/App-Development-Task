@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Team Task Manager</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main id="app" class="app-shell">
+      <section class="auth-screen" aria-labelledby="auth-title">
+        <div class="auth-panel">
+          <div>
+            <p class="eyebrow">Team Task Manager</p>
+            <h1 id="auth-title">Project delivery, roles, and progress in one workspace.</h1>
+            <p class="muted">
+              Log in with seeded accounts or create the first admin when the database is empty.
+            </p>
+          </div>
+          <form id="login-form" class="auth-form">
+            <div class="form-tabs" role="tablist" aria-label="Authentication mode">
+              <button class="tab-button active" type="button" data-auth-mode="login">Login</button>
+              <button class="tab-button" type="button" data-auth-mode="signup">Signup</button>
+            </div>
+            <label class="field signup-only hidden">
+              <span>Name</span>
+              <input name="name" type="text" autocomplete="name" placeholder="Your name">
+            </label>
+            <label class="field">
+              <span>Email</span>
+              <input name="email" type="email" autocomplete="email" value="admin@taskflow.test" required>
+            </label>
+            <label class="field">
+              <span>Password</span>
+              <input name="password" type="password" autocomplete="current-password" value="Admin123!" required>
+            </label>
+            <button class="primary-button" type="submit">Login</button>
+            <p class="form-note">Demo: admin@taskflow.test / Admin123! or member@taskflow.test / Member123!</p>
+            <p id="auth-error" class="error-text" role="alert"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="/app.js" defer></script>
+  </body>
+</html>

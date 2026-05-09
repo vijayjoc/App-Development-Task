@@ -1,0 +1,19 @@
+{
+  "name": "team-task-manager",
+  "version": "1.0.0",
+  "description": "Full-stack team task manager with REST APIs, SQLite, authentication, and role-based access control.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node scripts/smoke-test.js"
+  },
+  "keywords": [
+    "task-manager",
+    "sqlite",
+    "full-stack",
+    "rbac"
+  ],
+  "author": "",
+  "license": "MIT"
+}
